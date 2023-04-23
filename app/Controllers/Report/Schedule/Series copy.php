@@ -153,8 +153,8 @@ class Series extends BaseController
         //$pdf->Ln(6);
 
         ob_get_clean();
-        //$pdf->Output(convert_accented_characters($textoTituloFicha), 'F');
-        $pdf->Output('F','/var/www/html/schedule-backend/public/assets/docs/'.$yearDescription.'/'.$nameDir.'/'.$nameArchive);
+        $pdf->Output(convert_accented_characters($textoTituloFicha), 'F');
+        //$pdf->Output('F','/var/www/html/schedule-backend/public/assets/docs/'.$yearDescription.'/'.$nameDir.'/'.$nameArchive);
         exit;
     }
 
